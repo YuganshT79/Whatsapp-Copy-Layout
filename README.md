@@ -1,6 +1,6 @@
 # **Whatsapp Copy Layout**
 
-## A copy of the famous messenger app **Whatsapp** for the Google Udacity Scholars Copy layout challenge also for practicing Layout making in Android</br></br>
+A copy of the famous messenger app **Whatsapp** for the Google Udacity Scholars Copy layout challenge also for practicing Layout making in Android</br></br>
 
 ## **Screenshots**
 
