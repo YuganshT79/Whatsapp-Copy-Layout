@@ -1,0 +1,1 @@
+# Whatsapp Copy Layout
