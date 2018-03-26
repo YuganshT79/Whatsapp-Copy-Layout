@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="4dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/status_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/me" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/status_image">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="top"
+            android:text="John Doe"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_toEndOf="@id/tick"
+            android:text="53 minute ago"
+            android:textColor="@color/colorSmallText"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+</RelativeLayout>

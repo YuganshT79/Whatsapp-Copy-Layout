@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WhatsApp Copy</string>
+
+    <string name="chats_text">Chats</string>
+    <string name="calls_text">Calls</string>
+    <string name="status_text">Status</string>
+
+    <string name="search">Search</string>
+    <string name="new_group">New group</string>
+    <string name="new_broadcast">New broadcast</string>
+    <string name="whatsapp_web">WhatsApp Web</string>
+    <string name="starred_msgs">Starred messages</string>
+    <string name="menu_settings">Settings</string>
+</resources>

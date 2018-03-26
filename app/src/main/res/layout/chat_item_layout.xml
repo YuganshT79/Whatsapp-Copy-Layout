@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/user_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/me" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/my_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="Yugansh"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_below="@id/my_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/tick"
+                    android:src="@drawable/ic_check"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+
+                <TextView
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@id/tick"
+                    android:id="@+id/latest_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hello Android!"
+                    android:textColor="@color/colorSmallText"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/latest_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|center"
+                android:text="Yesterday"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/unread_messages"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/green_circle_bg"
+                android:gravity="center"
+                android:text="48"
+                android:layout_margin="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/latest_time"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
