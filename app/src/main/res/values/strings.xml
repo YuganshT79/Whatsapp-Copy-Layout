@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">WhatsApp Copy</string>
 
+    <!-- Navigation Drawer Strings -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
     <string name="chats_text">Chats</string>
     <string name="calls_text">Calls</string>
     <string name="status_text">Status</string>
+    <string name="groups_text">Groups</string>
 
     <string name="search">Search</string>
     <string name="new_group">New group</string>

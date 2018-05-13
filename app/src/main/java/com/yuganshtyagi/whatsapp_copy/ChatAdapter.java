@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -19,10 +20,16 @@ import java.util.Random;
 
 public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    Context context;
+    private Context context;
+    private ArrayList<Integer> pics;
+    private ArrayList<String> names;
+    private ArrayList<String> texts;
 
-    public ChatAdapter(Context context) {
+    ChatAdapter(Context context) {
         this.context = context;
+        pics = Utils.getAvengerImages();
+        names = Utils.getAvengerNames();
+        texts = Utils.getAvengerTexts();
     }
 
     @NonNull
@@ -38,16 +45,16 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
-        ((ChatHolder) holder).userName.setText("Yugansh");
+        ((ChatHolder) holder).userName.setText(names.get(position));
         ((ChatHolder) holder).unreadCnt.setText("7");
         ((ChatHolder) holder).latestTime.setText("Yesterday");
-        ((ChatHolder) holder).latestMessage.setText("Dummy Text!");
-        Glide.with(context).load(R.drawable.me).into(((ChatHolder) holder).userImage);
+        ((ChatHolder) holder).latestMessage.setText(texts.get(position));
+        Glide.with(context).load(pics.get(position)).into(((ChatHolder) holder).userImage);
     }
 
     @Override
     public int getItemCount() {
-        return 50;
+        return 8;
     }
 
     private class ChatHolder extends RecyclerView.ViewHolder implements View.OnClickListener{

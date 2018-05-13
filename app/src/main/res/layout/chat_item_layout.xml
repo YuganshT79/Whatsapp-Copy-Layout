@@ -51,6 +51,7 @@
 
                 <TextView
                     android:layout_marginStart="4dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_toEndOf="@id/tick"
                     android:id="@+id/latest_message"
                     android:layout_width="match_parent"
