@@ -16,7 +16,7 @@ A modified version of the famous messenger app **Whatsapp** for the Google Udaci
 
 ## **Screenshots**
 
-|   Splash 	|   Chats	|   Groups	| Status | Calls |
-|:-:	|:-:	|:-:	|:-:|:-:|
-|  <img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_splash.jpg"/>	|   <img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_chats.jpg"/>	|  <img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_group.jpg" />	|<img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_status.jpg" />|<img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_calls.jpg" />|
+|   Splash 	|   Chats	|   Groups	| Status | Calls | Nav |
+|:-:	|:-:	|:-:	|:-:|:-:|:-:|
+|  <img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_splash.jpg"/>	|   <img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_chats.jpg"/>	|  <img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_group.jpg" />	|<img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_status.jpg" />|<img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_calls.jpg" />|<img src="https://raw.githubusercontent.com/YuganshT79/Whatsapp-Copy-Layout/whatsapp_modified/screenshots/wm_nav.jpg" />|
 
