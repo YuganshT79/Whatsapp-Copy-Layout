@@ -1,4 +1,4 @@
-package com.yuganshtyagi.whatsapp_copy.Activity;
+package com.yuganshtyagi.whatsapp_copy;
 
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
@@ -16,15 +16,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.TranslateAnimation;
 import android.widget.LinearLayout;
-
-import com.yuganshtyagi.whatsapp_copy.Fragment.CallsFragment;
-import com.yuganshtyagi.whatsapp_copy.Fragment.CameraFragment;
-import com.yuganshtyagi.whatsapp_copy.Fragment.ChatsFragment;
-import com.yuganshtyagi.whatsapp_copy.R;
-import com.yuganshtyagi.whatsapp_copy.Fragment.StatusFragment;
 
 public class MainActivity extends AppCompatActivity {
 

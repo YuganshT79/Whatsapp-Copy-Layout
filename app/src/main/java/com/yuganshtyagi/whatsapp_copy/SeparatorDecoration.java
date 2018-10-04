@@ -1,4 +1,4 @@
-package com.yuganshtyagi.whatsapp_copy.Utils;
+package com.yuganshtyagi.whatsapp_copy;
 
 import android.content.Context;
 import android.graphics.Canvas;

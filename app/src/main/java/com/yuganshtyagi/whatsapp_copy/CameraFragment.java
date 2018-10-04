@@ -1,4 +1,4 @@
-package com.yuganshtyagi.whatsapp_copy.Fragment;
+package com.yuganshtyagi.whatsapp_copy;
 
 import android.content.Context;
 import android.content.Intent;

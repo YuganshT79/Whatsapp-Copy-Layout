@@ -1,4 +1,4 @@
-package com.yuganshtyagi.whatsapp_copy.Adapter;
+package com.yuganshtyagi.whatsapp_copy;
 
 import android.content.Context;
 import android.graphics.Color;
