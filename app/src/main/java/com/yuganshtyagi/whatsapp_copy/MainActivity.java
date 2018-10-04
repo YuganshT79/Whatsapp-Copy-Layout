@@ -29,6 +29,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.LinearLayout;
 import android.util.*;
 
 import com.bumptech.glide.util.Util;
@@ -92,9 +94,27 @@ public class MainActivity extends AppCompatActivity {
         actionButton = findViewById(R.id.fab);
 
         viewPager.setAdapter(new MainAdapter(getSupportFragmentManager()));
+        viewPager.setCurrentItem(1,true);
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                //Code to implement AppBar transition acc. to Viewpager
+                if(position == 0)
+                    appBarLayout.setTranslationY(appBarLayout.getHeight()*(positionOffset) - appBarLayout.getHeight());
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if(position == 0){
+                    getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+                    actionButton.setVisibility(View.GONE);
+                }else if(flag) {
+                    actionButton.setVisibility(View.VISIBLE);
+                }
+            }
         viewPager.setCurrentItem(0, true);
         tabLayout.setupWithViewPager(viewPager);
-        //setupTabLayout();
 
         actionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
 
     private void openCamera() {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -173,6 +194,18 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+            if(position == 0){
+                if(cameraFragment == null){
+                    cameraFragment = new CameraFragment();
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("appBarHeight",appBarLayout.getHeight());
+                    cameraFragment.setArguments(bundle);
+                    return  cameraFragment;
+                }
+                return cameraFragment;
+            }
+            if(position == 1){
+                if(chatsFragment == null){
             if (position == 0) {
                 if (chatsFragment == null) {
                     chatsFragment = new ChatsFragment();

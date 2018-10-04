@@ -32,7 +32,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     //External Libraries
-    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+    implementation 'com.otaliastudios:cameraview:1.6.0'
+    implementation 'com.mikhaellopez:circularimageview:3.1.0'
     implementation 'com.github.bumptech.glide:glide:4.6.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
 }

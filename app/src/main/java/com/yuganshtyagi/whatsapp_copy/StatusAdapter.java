@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.yuganshtyagi.whatsapp_copy.R;
 
 /**
  * Created by Yugansh Tyagi on 3/25/2018.
