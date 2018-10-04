@@ -1,0 +1,8 @@
+_Assets
+/build
+/gradle
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+WhatsappCopy.iml

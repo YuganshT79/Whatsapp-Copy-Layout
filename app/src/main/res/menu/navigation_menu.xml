@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/new_group"
+        android:title="@string/new_group"
+        android:icon="@drawable/ic_group_add"/>
+
+    <item
+        android:id="@+id/new_brdcst"
+        android:icon="@drawable/ic_broadcast"
+        android:title="@string/new_broadcast" />
+
+    <item
+        android:id="@+id/w_web"
+        android:icon="@drawable/ic_web"
+        android:title="@string/whatsapp_web" />
+
+    <item
+        android:id="@+id/starred_msgs"
+        android:icon="@drawable/ic_star"
+        android:title="@string/starred_msgs" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/menu_settings" />
+</menu>

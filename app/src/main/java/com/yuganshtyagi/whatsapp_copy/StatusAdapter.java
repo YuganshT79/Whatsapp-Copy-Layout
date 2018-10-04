@@ -18,9 +18,9 @@ import com.yuganshtyagi.whatsapp_copy.R;
 
 public class StatusAdapter extends RecyclerView.Adapter {
 
-    Context context;
+    private Context context;
 
-    public StatusAdapter(Context context) {
+    StatusAdapter(Context context) {
         this.context = context;
     }
 
@@ -51,7 +51,7 @@ public class StatusAdapter extends RecyclerView.Adapter {
         ImageView statusImage;
         TextView userName,statusTime;
 
-        public StatusHolder(View itemView) {
+        StatusHolder(View itemView) {
             super(itemView);
             statusImage = itemView.findViewById(R.id.status_image);
             userName = itemView.findViewById(R.id.user_name);
