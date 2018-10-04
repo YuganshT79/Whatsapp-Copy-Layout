@@ -1,4 +1,4 @@
-package com.yuganshtyagi.whatsapp_copy;
+package com.yuganshtyagi.whatsapp_copy.Fragment;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,6 +10,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.yuganshtyagi.whatsapp_copy.Adapter.CallsAdapter;
+import com.yuganshtyagi.whatsapp_copy.R;
+import com.yuganshtyagi.whatsapp_copy.Utils.SeparatorDecoration;
 
 /**
  * Created by Yugansh Tyagi on 3/21/2018.

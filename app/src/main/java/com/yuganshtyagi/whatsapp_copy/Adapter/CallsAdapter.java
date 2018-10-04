@@ -1,4 +1,4 @@
-package com.yuganshtyagi.whatsapp_copy;
+package com.yuganshtyagi.whatsapp_copy.Adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.yuganshtyagi.whatsapp_copy.R;
 
 /**
  * Created by Yugansh Tyagi on 3/22/2018.

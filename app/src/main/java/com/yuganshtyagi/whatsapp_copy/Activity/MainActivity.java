@@ -1,4 +1,4 @@
-package com.yuganshtyagi.whatsapp_copy;
+package com.yuganshtyagi.whatsapp_copy.Activity;
 
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
@@ -19,6 +19,12 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.LinearLayout;
+
+import com.yuganshtyagi.whatsapp_copy.Fragment.CallsFragment;
+import com.yuganshtyagi.whatsapp_copy.Fragment.CameraFragment;
+import com.yuganshtyagi.whatsapp_copy.Fragment.ChatsFragment;
+import com.yuganshtyagi.whatsapp_copy.R;
+import com.yuganshtyagi.whatsapp_copy.Fragment.StatusFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,23 +65,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                 //Code to implement AppBar transition acc. to Viewpager
-
-                /*Log.d("Position", String.valueOf(position));
-                Log.d("Offset", String.valueOf(positionOffset));
-                Log.d("Pixels", String.valueOf(positionOffsetPixels));
                 if(position == 0)
-                    appBarLayout.setTranslationY((-positionOffsetPixels/4) - 19.5f);*/
+                    appBarLayout.setTranslationY(appBarLayout.getHeight()*(positionOffset) - appBarLayout.getHeight());
             }
 
             @Override
             public void onPageSelected(int position) {
                 if(position == 0){
-                    translateUp();
                     getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                             WindowManager.LayoutParams.FLAG_FULLSCREEN);
                     actionButton.setVisibility(View.GONE);
                 }else if(flag) {
-                    translateDown();
+//                    translateDown();
                     actionButton.setVisibility(View.VISIBLE);
                 }
             }
@@ -100,24 +101,15 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setIcon(getResources().getDrawable(R.drawable.ic_camera));
     }
 
-    private void translateUp(){
-        Animation up = new TranslateAnimation(0,0,0,-280);
-        appBarLayout.setAnimation(up);
-        up.setDuration(150);
-        up.setFillAfter(true);
-        up.start();
-        flag = true;
-    }
-
-    private void translateDown(){
-        Animation up = new TranslateAnimation(0,0,-280,0);
-        appBarLayout.setAnimation(up);
-        up.setDuration(150);
-        up.setFillAfter(true);
-        up.start();
-        flag = false;
-        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-    }
+//    private void translateDown(){
+//        Animation up = new TranslateAnimation(0,0,-280,0);
+//        appBarLayout.setAnimation(up);
+//        up.setDuration(150);
+//        up.setFillAfter(true);
+//        up.start();
+//        flag = false;
+//        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//    }
 
 
     @Override
@@ -143,6 +135,9 @@ public class MainActivity extends AppCompatActivity {
             if(position == 0){
                 if(cameraFragment == null){
                     cameraFragment = new CameraFragment();
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("appBarHeight",appBarLayout.getHeight());
+                    cameraFragment.setArguments(bundle);
                     return  cameraFragment;
                 }
                 return cameraFragment;
